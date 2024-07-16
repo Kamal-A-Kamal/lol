@@ -1,0 +1,259 @@
+form {
+    --input-colors: theme("colors.cyan.500");
+}
+.form-reg__group.error {
+    --input-colors: theme("colors.rose.500");
+}
+.form-reg__group {
+    position: relative;
+    /* margin-bottom: 3em; */
+}
+.form-reg__group.disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+.form-reg__group input,
+.form-reg__group select,
+.form-reg__group textarea {
+    position: relative;
+    font-size: 18px;
+    padding: 0.625em 0.625em 0.625em 0.3125em;
+    display: block;
+    background-color: var(--color-primary-container);
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-text-secondary);
+    color: var(--color-text-primary);
+}
+
+.form-reg__group input:focus,
+.form-reg__group select:focus,
+.form-reg__group textarea:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+.form-reg__group label {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    right: 0.3125em;
+    top: 0.625em;
+    transition: 0.27s ease all;
+    -moz-transition: 0.27s ease all;
+    -webkit-transition: 0.27s ease all;
+}
+
+/* active state */
+.form-reg__group input:focus ~ label,
+.form-reg__group input:valid ~ label,
+.form-reg__group textarea:focus ~ label,
+.form-reg__group textarea:valid ~ label {
+    top: -20px;
+    left: 0px;
+    font-size: 14px;
+    color: var(--input-colors);
+}
+
+/* BOTTOM BARS ================================= */
+.form-reg__group .bar {
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+.form-reg__group .bar:before {
+    content: "";
+    right: 0%;
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 100px;
+    background: var(--input-colors);
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+/* active state */
+.form-reg__group input:focus ~ .bar:before,
+.form-reg__group input:focus ~ .bar:after,
+.form-reg__group select:focus ~ .bar::after,
+.form-reg__group select:focus ~ .bar::before,
+.form-reg__group textarea:focus ~ .bar::before,
+.form-reg__group textarea:focus ~ .bar::after {
+    width: 100%;
+}
+
+.form-reg__group .bg {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 0;
+    /* transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all; */
+    transition: 0.3s ease all;
+    background: var(--input-colors);
+}
+.form-reg__group .bg:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    transition: all var(--transition-smooth) ease 0.2s;
+    background: var(--color-primary-container);
+}
+
+.form-reg__group input:focus ~ .bg,
+/* .form-reg__group input:valid ~ .bg, */
+/* .form-reg__group textarea:valid ~ .bg , */
+.form-reg__group textarea:focus ~ .bg {
+    /* transition: 0.3s ease all; */
+    width: 100%;
+}
+.form-reg__group input:focus ~ .bg::after,
+/* .form-reg__group input:valid ~ .bg::after, */
+/* .form-reg__group textarea:valid ~ .bg::after,  */
+.form-reg__group textarea:focus ~ .bg::after {
+    width: 100%;
+}
+
+.form-reg__second {
+    background-color: var(--color-secondary-container);
+    height: 100%;
+    box-shadow: 0px -5px 5px -5px #000 inset;
+}
+
+.form-reg__group input,
+.form-reg__group select,
+.form-reg__group textarea {
+    position: relative;
+    z-index: 10;
+    background-color: #0000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    opacity: 0.2;
+    /* -webkit-box-shadow: 0 0 0 30px var(--color-primary-container) inset !important; */
+    -webkit-box-shadow: 0 0 0 30px theme("colors.yellow.100") inset !important;
+    /* -webkit-box-shadow: 0 0 0 30px #0000 inset !important; */
+}
+
+.react-select__outer-container > div:nth-child(1) > div {
+    background-color: var(--color-inner-container);
+    border-color: var(--color-secondary-container);
+    transition: all var(--transition-smooth) ease;
+}
+.react-select__outer-container
+    > div:nth-child(1)
+    > div:nth-child(3)
+    > div:nth-child(1)
+    > div:nth-child(1) {
+    color: var(--color-text-secondary);
+    transition: all var(--transition-smooth) ease;
+}
+.react-select__outer-container > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > span {
+    background-color: var(--color-text-secondary);
+    transition: all var(--transition-smooth) ease;
+}
+.react-select__outer-container > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div {
+    color: var(--color-text-secondary);
+    transition: all var(--transition-smooth) ease;
+}
+.react-select__outer-container
+    > div:nth-child(1)
+    > div:nth-child(3)
+    > div:nth-child(2)
+    > div:hover {
+    color: var(--color-text-primary);
+    transition: all var(--transition-smooth) ease;
+}
+.dark .react-select__outer-container > div:nth-child(1) > div:nth-child(4) > div > div:hover {
+    background-color: theme("colors.blue.900");
+    transition: all var(--transition-smooth) ease;
+}
+
+.file-upload-wrapper {
+    border-width: 2px;
+    border-color: #0000;
+}
+.file-upload-wrapper:after {
+    content: attr(data-text);
+    transition: all var(--transition-smooth) ease;
+    position: relative;
+
+    background: #aaa2;
+    color: var(--color-text-secondary);
+    padding: 10px 15px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    /* border-radius: 10px 0px 0px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.file-upload-wrapper:before {
+    content: "رفع";
+    position: relative;
+
+    background: theme("colors.cyan.500");
+    transition: all var(--transition-smooth) ease;
+    color: #fff;
+
+    height: 100%;
+    width: auto;
+    padding: 0 30px 3px;
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.file-upload-wrapper:hover:before {
+    background: theme("colors.cyan.800");
+}
+.file-upload-wrapper:hover:after {
+    background: #aaa4;
+}
+
+.darkmode .file-upload-wrapper:hover:after {
+    background: #aaa1;
+}
+.file-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}

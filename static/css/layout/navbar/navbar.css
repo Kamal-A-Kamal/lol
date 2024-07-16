@@ -1,0 +1,184 @@
+.navbar {
+    height: calc(var(--navbar-height));
+    /* background-color: #0000; */
+}
+.top-navbar-height {
+    top: calc(var(--navbar-height));
+    /* background-color: #0000; */
+}
+.hide-top {
+    transform: translateY(-100%);
+}
+#nav-icon {
+    --nav-icon-color: currentColor;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    transition: all var(--transition-smooth) cubic-bezier(0.61, 0.01, 0.42, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+}
+
+#nav-icon span {
+    height: 0px;
+    /* border: 1px solid #000; */
+    /* border: 1px solid var(--color-text-primary); */
+    border: 2px solid var(--nav-icon-color);
+    border-radius: theme("borderRadius.sm");
+    width: 30px;
+    display: block;
+    position: absolute;
+    /* margin-right: 5px; */
+    transition: all var(--transition-smooth) cubic-bezier(0.61, 0.01, 0.42, 1);
+    /* background: var(--color-text-primary); */
+    background: var(--nav-icon-color);
+}
+
+#nav-icon.open {
+    transition-delay: 100ms;
+    transform: scale(1.1);
+}
+
+#nav-icon.open span:nth-child(3):before {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #f26451;
+}
+
+#nav-icon.open span {
+    --var-zero-x: 80%;
+    --var-zero-y: 0%;
+    --var-ten: 10%;
+    /* border: 1px solid var(--color-text-primary); */
+    border: 1px solid var(--nav-icon-color);
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-top: -2px;
+    animation: atom 300ms linear 1;
+    width: 25px;
+    top: 0px;
+    background: transparent;
+}
+
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+    top: 8px;
+}
+
+#nav-icon span:nth-child(3) {
+    top: 16px;
+}
+#nav-icon.open span:nth-child(1) {
+    top: 7px;
+}
+
+#nav-icon.open span:nth-child(2) {
+    top: 8px;
+}
+
+#nav-icon.open span:nth-child(3) {
+    top: 7px;
+}
+
+#nav-icon span:nth-child(3):before {
+    opacity: 0;
+    animation: ball 1.5s linear infinite;
+    content: "";
+    /* border: 2px solid var(--color-text-primary); */
+    border: 2px solid var(--nav-icon-color);
+    display: block;
+    position: relative;
+    top: 0.25px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    transform: rotate(-33deg);
+}
+
+#nav-icon.open span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    transform: rotate(33deg);
+}
+
+#nav-icon.open span:nth-child(3):before {
+    opacity: 1;
+    transition: opacity 600ms cubic-bezier(0.61, 0.01, 0.42, 1);
+}
+
+@keyframes atom {
+    0% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes division {
+    0% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes ball {
+    0% {
+        left: calc(-2 * var(--var-ten) - var(--var-zero-x));
+        top: calc(1 * var(--var-ten) - var(--var-zero-y));
+    }
+    10% {
+        left: calc(1 * var(--var-ten) - var(--var-zero-x));
+        top: calc(-3.5 * var(--var-ten) - var(--var-zero-y));
+    }
+    25% {
+        left: calc(4.5 * var(--var-ten) - var(--var-zero-x));
+        top: calc(-5 * var(--var-ten) - var(--var-zero-y));
+    }
+    40% {
+        left: calc(8 * var(--var-ten) - var(--var-zero-x));
+        top: calc(-2 * var(--var-ten) - var(--var-zero-y));
+    }
+    50% {
+        left: calc(9.8 * var(--var-ten) - var(--var-zero-x));
+        top: calc(1.8 * var(--var-ten) - var(--var-zero-y));
+    }
+    60% {
+        left: calc(8 * var(--var-ten) - var(--var-zero-x));
+        top: calc(5 * var(--var-ten) - var(--var-zero-y));
+    }
+    75% {
+        left: calc(4.5 * var(--var-ten) - var(--var-zero-x));
+        top: calc(8 * var(--var-ten) - var(--var-zero-y));
+    }
+    90% {
+        left: calc(0 * var(--var-ten) - var(--var-zero-x));
+        top: calc(6 * var(--var-ten) - var(--var-zero-y));
+    }
+    100% {
+        left: calc(-2 * var(--var-ten) - var(--var-zero-x));
+        top: calc(1 * var(--var-ten) - var(--var-zero-y));
+    }
+}
+/* .free-bg {
+    --transform-duration: 10000ms;
+    animation: move-vert var(--transform-duration) infinite linear;
+}
+.free-bg:nth-child(2) {
+    transform: translateY(-100%);
+    animation: move-vert var(--transform-duration) linear calc(var(--transform-duration) * 0.5)
+        infinite forwards;
+}
+
+@keyframes move-vert {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+} */

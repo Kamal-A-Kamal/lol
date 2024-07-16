@@ -1,0 +1,16 @@
+.positive-side-nav-margin {
+    margin-right: var(--side-navbar-collapsed-width);
+}
+.SideNav::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.SideNav::-webkit-scrollbar-track {
+    background: var(--color-primary-container);
+    border-radius: 5px;
+  }
+  
+.SideNav::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+    border-radius: 14px;
+  }

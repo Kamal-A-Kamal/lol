@@ -1,0 +1,73 @@
+:root {
+    --font-family: "Almarai";
+    --side-navbar-collapsed-width: 3rem;
+    /* --body-top: 0px; */
+}
+@font-face {
+    font-family: "FS Albert Arabic";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/fonts/fs-albert.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FS Albert Arabic";
+    font-weight: bold;
+    font-style: normal;
+    src: url("./assets/fonts/fs-albert-700.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Somar";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/fonts/ArbFONTS-Somar-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Somar";
+    font-weight: 600;
+    font-style: normal;
+    src: url("./assets/fonts/ArbFONTS-Somar-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Somar";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./assets/fonts/ArbFONTS-Somar-Bold.otf") format("opentype");
+}
+.font-som {
+    font-family: "Somar", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Lalezar&family=Rakkas&display=swap");
+
+.font-borel {
+    font-family: "Borel", cursive;
+}
+
+/* body {
+    height: 1000vh;
+    direction: ltr;
+} */
+.pisitive-nav-top {
+    top: calc(var(--navbar-height));
+}
+
+.font-lem {
+    font-family: "Lemonada", sans-serif;
+}
+
+@font-face {
+    font-family: "FFShamel";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./assets/fonts/FFShamelFamily-SansOneBook.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FFShamel";
+    font-weight: bold;
+    font-style: normal;
+    src: url("./assets/fonts/FF Shamel Family Sans One Bold.ttf") format("truetype");
+}
+
+.font-ff {
+    font-family: "FFShamel", sans-serif;
+}

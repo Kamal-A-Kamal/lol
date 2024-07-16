@@ -1,0 +1,124 @@
+.main__worm {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: theme("colors.rose.500");
+    height: 2px;
+    border-radius: 100px;
+    width: 50px;
+    animation: wormMove 10s ease-in-out infinite forwards;
+}
+@keyframes wormMove {
+    0% {
+        width: 50px;
+        height: 2px;
+        right: 10px;
+    }
+    10% {
+        width: 100px;
+        height: 2px;
+        right: 30px;
+    }
+    20% {
+        width: 70px;
+        height: 2px;
+        right: 70px;
+    }
+    30% {
+        width: 120px;
+        height: 2px;
+        right: 80px;
+    }
+    40% {
+        width: 50px;
+        height: 2px;
+        right: 150px;
+    }
+    50% {
+        width: 100px;
+        height: 2px;
+        right: 160px;
+    }
+    60% {
+        width: 140px;
+        height: 2px;
+        right: 110px;
+    }
+    70% {
+        width: 70px;
+        height: 2px;
+        right: 100px;
+    }
+    80% {
+        width: 100px;
+        height: 2px;
+        right: 110px;
+    }
+}
+
+.dna-loader-3d *,
+.dna-loader-3d *::before,
+.dna-loader-3d *::after {
+    transform-style: preserve-3d;
+}
+
+.dna-loader-3d {
+    --grey-color: #454344;
+    --blue-color: theme("colors.yellow.300");
+    --red-color: theme("colors.rose.500");
+    --ball-width: 0.25rem;
+    --rotate-radius: 1rem;
+    --rotate-duration: 2s;
+    --anime: var(--rotate-duration) linear both infinite;
+    display: flex;
+    flex-direction: column;
+    perspective: 500px;
+    height: 50vh;
+}
+.dna-loader-3d .orbit {
+    --rotate-delay-even: calc(var(--rotate-duration) / var(--count) * var(--i) * -2);
+    --rotate-delay-odd: calc(var(--rotate-delay-even) - calc(var(--rotate-duration) * 0.5));
+    position: relative;
+    width: var(--ball-width);
+    height: var(--ball-width);
+    animation: rotate-y var(--anime) var(--rotate-delay);
+}
+.dna-loader-3d .orbit .ball {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(calc(var(--rotate-radius) * -1));
+}
+.dna-loader-3d .orbit .ball::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--ball-color);
+    border-radius: 50%;
+    animation: rotate-y-reverse var(--anime) var(--rotate-delay);
+}
+.dna-loader-3d .orbit:nth-child(odd) {
+    --ball-color: var(--blue-color);
+    --rotate-delay: var(--rotate-delay-odd);
+}
+.dna-loader-3d .orbit:nth-child(even) {
+    --ball-color: var(--red-color);
+    --rotate-delay: var(--rotate-delay-even);
+}
+@keyframes rotate-y {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(1turn);
+    }
+}
+@keyframes rotate-y-reverse {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(-1turn);
+    }
+}

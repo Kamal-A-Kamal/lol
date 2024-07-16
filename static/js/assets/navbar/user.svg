@@ -1,0 +1,52 @@
+var _circle, _path, _path2, _path3, _circle2, _path4;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgUser(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 32 32",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 16,
+    cy: 16,
+    r: 15,
+    fill: "#eef5fd"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#d7e2f2",
+    d: "M2.38,17.5A15,15,0,0,1,27.72,6.67,15,15,0,1,0,5.65,26.83,14.92,14.92,0,0,1,2.38,17.5Z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "#96d7ff",
+    d: "M16,31a15,15,0,0,0,11-4.83v-.39h0a11,11,0,0,0-21.91-1h0l-.06,1v.39A15,15,0,0,0,16,31Z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "#86c3ef",
+    d: "M6.13,27v-.4l.07-.95h0a11.06,11.06,0,0,1,10.93-9.83,10.79,10.79,0,0,1,5.77,1.68A10.91,10.91,0,0,0,16,15,11.05,11.05,0,0,0,5.08,24.83h0l-.06,1v.39a15.3,15.3,0,0,0,3,2.47A16.22,16.22,0,0,1,6.13,27Z"
+  })), _circle2 || (_circle2 = /*#__PURE__*/React.createElement("circle", {
+    cx: 16,
+    cy: 12,
+    r: 7,
+    fill: "#ff9797"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fill: "#e47979",
+    d: "M10,12.75A7,7,0,0,1,20.67,6.8,7,7,0,1,0,12.33,18,7,7,0,0,1,10,12.75Z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgUser);
+export default __webpack_public_path__ + "static/media/user.7bdee0126bf9ff6341797210b7b70031.svg";
+export { ForwardRef as ReactComponent };

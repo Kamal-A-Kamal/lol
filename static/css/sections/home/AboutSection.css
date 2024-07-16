@@ -1,0 +1,130 @@
+.dna-spinner {
+    display: block;
+    /* width: 47.5rem; */
+    height: 8rem;
+    opacity: 0;
+    animation: opacity 500ms linear 1750ms forwards;
+}
+.dna-spinner .row {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.dna-spinner .spin_row.row-1 {
+    margin-left: -0.5rem;
+}
+.dna-spinner .spin_row.row-1 span {
+    background: theme("colors.yellow.500");
+    animation: vertical1 2.5s ease-in-out infinite;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(1) {
+    animation-delay: 0.15s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(3) {
+    animation-delay: 0.45s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(5) {
+    animation-delay: 0.75s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(6) {
+    animation-delay: 0.9s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(7) {
+    animation-delay: 1.05s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(8) {
+    animation-delay: 1.2s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(9) {
+    animation-delay: 1.35s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(10) {
+    animation-delay: 1.5s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(11) {
+    animation-delay: 1.65s;
+}
+.dna-spinner .spin_row.row-1 span:nth-child(12) {
+    animation-delay: 1.8s;
+}
+.dna-spinner .spin_row.row-2 span {
+    background: theme("colors.rose.500");
+    animation: vertical2 2.5s ease-in-out infinite;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(1) {
+    animation-delay: 0.15s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(3) {
+    animation-delay: 0.45s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(5) {
+    animation-delay: 0.75s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(6) {
+    animation-delay: 0.9s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(7) {
+    animation-delay: 1.05s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(8) {
+    animation-delay: 1.2s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(9) {
+    animation-delay: 1.35s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(10) {
+    animation-delay: 1.5s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(11) {
+    animation-delay: 1.65s;
+}
+.dna-spinner .spin_row.row-2 span:nth-child(12) {
+    animation-delay: 1.8s;
+}
+.dna-spinner span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes vertical1 {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        z-index: 1;
+    }
+    50% {
+        transform: translateY(3.5rem) scale(0.25);
+        z-index: 0;
+    }
+}
+@keyframes vertical2 {
+    0%,
+    100% {
+        transform: translateY(3.5rem) scale(0.25);
+        z-index: 0;
+    }
+    50% {
+        transform: translateY(0) scale(1);
+        z-index: 1;
+    }
+}

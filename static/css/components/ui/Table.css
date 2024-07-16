@@ -1,0 +1,82 @@
+/* .datatablecomponent > div {
+    background-color: transparent;
+} */
+div.rdt_Table {
+    background-color: transparent;
+}
+div.datatablecomponent.nodense .rdt_TableCell > div,
+div.datatablecomponent.nodense .rdt_TableCol > div:not(.rdt_TableCol_Sortable),
+div.datatablecomponent.nodense .rdt_TableCol_Sortable > div {
+    white-space: initial;
+}
+div.rdt_TableHeadRow {
+    background-color: var(--color-outer-container);
+    color: var(--color-text-primary);
+    border-top-left-radius: var(--border-radius-medium);
+    border-top-right-radius: var(--border-radius-medium);
+    padding: 12px 0px;
+    font-weight: var(--font-w-bold);
+    font-size: var(--font-size-normal);
+    transition: all var(--transition-smooth) ease;
+}
+/* div.rdt_TableRow {
+    background-color: var(--color-outer-container);
+} */
+div.rdt_TableRow {
+    transition: all var(--transition-smooth) ease;
+    color: var(--color-text-primary);
+    background-color: var(--color-secondary-container);
+}
+div.rdt_TableRow:nth-child(even) {
+    background-color: var(--color-third-container);
+}
+
+div.rdt_TableRow:hover {
+    color: white;
+    transition: all var(--transition-smooth) ease;
+    border: 0;
+    background-color: theme("colors.blue.600");
+}
+div.rdt_TableRow:not(:last-of-type) {
+    border: 0;
+}
+nav.rdt_Pagination {
+    background-color: var(--color-outer-container);
+    color: var(--color-text-secondary);
+    border-bottom-left-radius: var(--border-radius-medium);
+    border-bottom-right-radius: var(--border-radius-medium);
+    /* padding: 12px 0px; */
+    font-weight: var(--font-w-bold);
+    font-size: var(--font-size-normal);
+    transition: all var(--transition-smooth) ease;
+}
+div.rdt_TableHeader {
+    background-color: var(--color-inner-container);
+    transition: all var(--transition-smooth) ease;
+    padding: 20px;
+}
+
+.datatablecomponent button {
+    transition: all var(--transition-smooth) ease;
+    color: var(--color-text-primary);
+    fill: var(--color-text-primary);
+    opacity: 0.8;
+}
+.datatablecomponent button:disabled {
+    color: var(--color-text-secondary);
+    fill: var(--color-text-secondary);
+    opacity: 0.5;
+}
+.rdt_TableCell > div,
+.rdt_TableCol > div:not(.rdt_TableCol_Sortable),
+.rdt_TableCol_Sortable > div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.rdt_Table > div {
+    background-color: var(--color-secondary-container);
+    transition: all var(--transition-smooth) ease;
+    color: var(--color-text-primary);
+    border-radius: 100px;
+}

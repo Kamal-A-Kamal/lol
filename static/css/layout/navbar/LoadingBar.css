@@ -1,0 +1,35 @@
+.loading-hidden {
+    transform: translateY(-100%);
+}
+
+.loading-bar {
+    z-index: 1000;
+    background: linear-gradient(
+        124deg,
+        theme("colors.yellow.500") 0%,
+        theme("colors.yellow.500") 50%,
+        theme("colors.yellow.100") 50%,
+        theme("colors.yellow.100") 100%
+    );
+    background-size: 300% 50%;
+    animation: loading-bar 1s cubic-bezier(0.43, 0.28, 0.96, 0.98) infinite;
+    -webkit-animation: loading-bar 1s cubic-bezier(0.43, 0.28, 0.96, 0.98) infinite;
+}
+.darkmode .loading-bar {
+    background: linear-gradient(
+        124deg,
+        theme("colors.yellow.500") 0%,
+        theme("colors.yellow.500") 50%,
+        theme("colors.yellow.900") 50%,
+        theme("colors.yellow.900") 100%
+    );
+    background-size: 300% 50%;
+}
+@keyframes loading-bar {
+    0% {
+        background-position: 300% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}

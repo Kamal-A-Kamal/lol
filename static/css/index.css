@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;900&family=Comfortaa:wght@400;600;700&family=Comforter&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Kufam:wght@400;600;700;900&family=Rubik:wght@400;600;700;900&family=Tajawal:wght@400;500;700;900&family=Vibes&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.home-main_section {
+    margin-top: calc(-1 * var(--navbar-height));
+}
+
+.form-img-cover {
+    /* background-image: radial-gradient(#fff0, #fff); */
+    background-image: radial-gradient(#0000, #000);
+}
+/* .darkmode .form-img-cover {
+    background-image: radial-gradient(#0000, #000);
+} */

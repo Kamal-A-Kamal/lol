@@ -1,0 +1,86 @@
+var _polyline, _polyline2, _polyline3, _path, _polygon, _polyline4, _rect, _path2, _rect2, _path3, _polyline5, _rect3, _path4, _path5, _path6;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgRegister(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    enableBackground: "new 0 0 64 64",
+    viewBox: "0 0 64 64",
+    id: "djoser",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _polyline || (_polyline = /*#__PURE__*/React.createElement("polyline", {
+    fill: "#e2c9a6",
+    points: "54 29 53 25 53 24.999 53 19 11 19 11 24.999 11 25 10 29"
+  })), _polyline2 || (_polyline2 = /*#__PURE__*/React.createElement("polyline", {
+    fill: "#bfa77a",
+    points: "61 49 59 44.999 59 38.999 5 38.999 5 44.999 3 49"
+  })), _polyline3 || (_polyline3 = /*#__PURE__*/React.createElement("polyline", {
+    fill: "#bfa77a",
+    points: "28 48.999 2 48.999 2 54.999 62 54.999 62 48.999 36 48.999"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#d3b990",
+    d: "M8,51.998h54v-3H36h-8H5C5,50.655,6.343,51.998,8,51.998z"
+  })), _polygon || (_polygon = /*#__PURE__*/React.createElement("polygon", {
+    fill: "#e2c9a6",
+    points: "59 44.999 5 44.999 3 49 61 49"
+  })), _polyline4 || (_polyline4 = /*#__PURE__*/React.createElement("polyline", {
+    fill: "#e2c9a6",
+    points: "57 39 55 34.999 55 28.999 9 28.999 9 34.999 7 39"
+  })), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 46,
+    height: 5.999,
+    x: 9,
+    y: 29,
+    fill: "#bfa77a"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "#d3b990",
+    d: "M14.999,31.998H55V29H12C12,30.656,13.343,31.998,14.999,31.998z"
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    width: 42,
+    height: 6,
+    x: 11,
+    y: 19,
+    fill: "#bfa77a"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "#d3b990",
+    d: "M17,22h36v-3H14C14,20.657,15.343,22,17,22z"
+  })), _polyline5 || (_polyline5 = /*#__PURE__*/React.createElement("polyline", {
+    fill: "#e2c9a6",
+    points: "51 19 50 15 14 15 13 19"
+  })), _rect3 || (_rect3 = /*#__PURE__*/React.createElement("rect", {
+    width: 36,
+    height: 6,
+    x: 14,
+    y: 9,
+    fill: "#bfa77a"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fill: "#585858",
+    d: "M28,55v-6c0-2.209,1.791-4,4-4h0c2.209,0,4,1.791,4,4v6"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fill: "#d3b990",
+    d: "M11 42h48v-3H33h-8H8C8 40.657 9.343 42 11 42zM20 12h30V9H17C17 10.657 18.343 12 20 12z"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    fill: "#636363",
+    d: "M31,46c-0.849,0-1.633,0.268-2.281,0.719C28.268,47.367,28,48.151,28,49v6h7v-5 C35,47.791,33.209,46,31,46z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgRegister);
+export default __webpack_public_path__ + "static/media/register.5178db04abd12c9c953a05e50fd85cf8.svg";
+export { ForwardRef as ReactComponent };

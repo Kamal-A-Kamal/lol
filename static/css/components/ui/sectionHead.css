@@ -1,0 +1,22 @@
+.home-years-title-bg__container,
+.home-years__title {
+    width: 100vw;
+}
+.home-years-title__bg {
+    position: absolute;
+    transition: all 1s ease-out;
+    /* font-size: var(--font-size-bigmain); */
+    color: transparent;
+    /* font-family: "cairo"; */
+    z-index: 1;
+    top: -15px;
+    opacity: 0.1;
+    /* transform: translateX(-100%); */
+    -webkit-text-stroke: 3px var(--color-dark-0);
+}
+
+@media (max-width: 768px) {
+    /* .home-years-title__bg {
+        top: 30px;
+    } */
+}

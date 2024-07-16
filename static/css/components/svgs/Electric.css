@@ -1,0 +1,27 @@
+.electric {
+    position: fixed;
+    /* transform: translateY(30px); */
+    /* top: 0; */
+}
+
+.electric:not(.static) {
+    top: 0px;
+}
+
+.electric.static {
+    position: absolute;
+    bottom: 0px;
+}
+
+.electric .st0 {
+    fill: none;
+    stroke: #1e3e92;
+    stroke-miterlimit: 10;
+}
+
+.electric .st1 {
+    fill: none;
+    stroke: #1e3e92;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}

@@ -1,0 +1,7 @@
+.progress-circle {
+    border-radius: 50%;
+}
+.progress-content {
+    height: 80%;
+    width: 80%;
+}

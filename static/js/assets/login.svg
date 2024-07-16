@@ -1,0 +1,81 @@
+var _path, _path2, _path3, _path4, _path5, _path6, _rect, _path7, _rect2, _rect3, _rect4;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgLogin(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 512,
+    height: 512,
+    "data-name": "Flat Revise",
+    viewBox: "0 0 512 512",
+    id: "pharaoh",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#fdbf44",
+    d: "M56,488V428.091A30,30,0,0,1,74.578,400.35L184,352H328l109.422,48.35A30,30,0,0,1,456,428.091V488Z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "#57cee6",
+    d: "M375.791,440h-243.2c-53.906,0-92.383-52.229-76.406-103.712L96,208H408l43.421,125.921C469.335,385.871,430.743,440,375.791,440Z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "#fdbf44",
+    d: "M216,307l19.981,73.262A20,20,0,0,0,255.276,395h1.448a20,20,0,0,0,19.3-14.738L296,307Z"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fill: "#fdbf44",
+    d: "M256,48,370.006,83.627a30,30,0,0,1,19.142,18.1l54.208,144.554A40,40,0,0,1,423.791,296.1l-12.9,6.451a40,40,0,0,0-21.745,30.372L372.718,453.405A40,40,0,0,1,333.084,488H312l-8-280H208l-8,280H178.916a40,40,0,0,1-39.634-34.6L122.854,332.927a40,40,0,0,0-21.745-30.372l-12.9-6.451a40,40,0,0,1-19.565-49.822l54.208-144.554a30,30,0,0,1,19.142-18.1Z"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fill: "#333",
+    d: "M88.209 296.1l12.9 6.45a40 40 0 0 1 21.745 30.373l4.153 30.456 77.232-23.764 2.575-90.115L71.667 280.692A39.862 39.862 0 0 0 88.209 296.1zM139.282 453.405A40 40 0 0 0 178.916 488H200l2.364-82.756L136.186 430.7zM175.959 73.013L141.994 83.627a30 30 0 0 0-19.142 18.1L104 152l112 56h2.909zM423.459 296.1l-12.9 6.45a40 40 0 0 0-21.744 30.373l-4.153 30.456-77.233-23.764L304.853 249.5 440 280.692A39.86 39.86 0 0 1 423.459 296.1zM372.385 453.405A40 40 0 0 1 332.752 488H311.667L309.3 405.244 375.481 430.7zM335.709 73.013l33.965 10.614a30 30 0 0 1 19.141 18.1L407.667 152l-112 56h-2.909z"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    fill: "#ffd4cf",
+    d: "M332.344,176H179.649a10,10,0,0,0-9.884,11.515l13.1,85.516a20,20,0,0,0,6.818,12.211l44.712,38A20,20,0,0,0,247.351,328H264.6a20,20,0,0,0,13.015-4.815l44.758-38.364a20,20,0,0,0,6.752-12.144l13.1-85.156A10,10,0,0,0,332.344,176Z"
+  })), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 48,
+    height: 72,
+    x: 232,
+    y: 24,
+    fill: "#57cee6",
+    rx: 20,
+    ry: 20
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fill: "#333",
+    d: "M235.981,380.262A20,20,0,0,0,255.276,395h1.448a20,20,0,0,0,19.3-14.738L282.909,355H229.091Z"
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 24,
+    x: 208,
+    y: 208,
+    fill: "#ae7069"
+  })), _rect3 || (_rect3 = /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 24,
+    x: 288,
+    y: 208,
+    fill: "#ae7069"
+  })), _rect4 || (_rect4 = /*#__PURE__*/React.createElement("rect", {
+    width: 64,
+    height: 16,
+    x: 224,
+    y: 272,
+    fill: "#ae7069"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgLogin);
+export default __webpack_public_path__ + "static/media/login.522373d53397d5297cbc55d724f28c3f.svg";
+export { ForwardRef as ReactComponent };
